@@ -7,9 +7,10 @@
 .container{
     margin: 100px;
     display: flex;
+    justify-content: space-evenly;
 }
 
-.group1 {
+.group {
     border: 2px solid #4C5B5C;
     width: 300px;
     height: 200px;
@@ -20,19 +21,26 @@
     flex-wrap: wrap;
 }
 
-.g1button{
+.btn{
     background: none;
+    width: 120px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid  black;
+}
+
+/* group1 */
+
+.g1button{
     position: relative;
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    width: 120px;
-    height: 50px;
     border: 2px solid #4C5B5C;
     color: #4C5B5C;
-    outline: none;
-    cursor: pointer;
 }
 
 .g1button:hover{
@@ -93,4 +101,89 @@
 #g1btn4:hover::before{
     width: 180%;
     border-radius: 50% 0 0 50%;
+}
+
+/* group2 */
+.group2{
+    background-color: #332E3C;
+}
+
+.g2button{
+    width: 150px;
+    height: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    position: relative;
+    color: #FFF15B;
+    transition: 0.2s all ease;
+    border: none;
+    overflow:hidden;
+}
+
+.g2button:hover{
+    color: #332E3C;
+    background: #FFF15B;
+    box-shadow: 0 0 10px #FFF15B, 0 0 40px #FFF15B, 0 0 80px #FFF15B;
+    transition-delay: 0.9s;
+    font-weight: 300;
+}
+
+.g2span{
+    position: absolute;
+    display: block;
+}
+
+.g2span1{
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #FFF15B);
+}
+
+.g2button:hover .g2span1{
+    left: 100%;
+    transition: 0.8s;
+}
+
+.g2span2{
+    top:-100%;
+    right:0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #FFF15B);
+}
+
+.g2button:hover .g2span2{
+    top: 100%;
+    transition: 0.8s;
+    transition-delay: 0.18s;
+}
+
+.g2span3{
+    bottom:0;
+    right:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #FFF15B);
+}
+
+.g2button:hover .g2span3{
+    right: 100%;
+    transition: 0.8s;
+    transition-delay: 0.38s;
+}
+
+.g2span4{
+    bottom:-100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #FFF15B);
+}
+
+.g2button:hover .g2span4{
+    bottom: 100%;
+    transition: 0.8s;
+    transition-delay: 0.58s;
 }
