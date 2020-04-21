@@ -12,6 +12,7 @@
 }
 
 .group {
+    margin: 20px;
     border: 2px solid #4C5B5C;
     width: 300px;
     height: 200px;
@@ -230,3 +231,160 @@
 .g3button:hover .g3span2{
     right: 80%;
 }
+
+/* group4 */
+.group4{
+    background-color: #D3E6C4;
+    border: none;
+}
+
+.g4button{
+    background: transparent;
+    position: relative;
+    color: #968A5C;;
+    border: 2px solid #968A5C;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.g4btn1span1{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background-color: #968A5C;
+    top: -5px;
+    left: -120px;
+    z-index: -1;
+    transition: 0.5s all ease;
+}
+
+.g4btn1span2{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background-color: #968A5C;
+    top: -5px;
+    right: -120px;
+    z-index: -1;
+    transition: 0.5s all ease;
+}
+
+.g4button:hover{
+    color: #D3E6C4;
+}
+
+.g4button:hover .g4btn1span1{
+    left: -5px;
+}
+
+.g4button:hover .g4btn1span2{
+    right: -5px;
+}
+
+.g4btn2span1{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    background-color: #968A5C;
+    top: -60px;
+    left: -10px;
+    z-index: -1;
+    transition: 0.5s all ease;
+}
+
+.g4btn2span2{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    background-color: #968A5C;
+    bottom: -60px;
+    left: -10px;
+    z-index: -1;
+    transition: 0.5s all ease;
+}
+
+.g4button:hover .g4btn2span1{
+    top: -5px;
+}
+
+.g4button:hover .g4btn2span2{
+    bottom: -5px;
+}
+
+#g4btn3, #g4btn4{
+    transition-delay: unset;
+}
+
+#g4btn3:hover, #g4btn4:hover{
+    transition-delay: 0.25s;
+}
+
+.g4btn3span1{
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    background-color: #968A5C;
+    top: -100px;
+    left: 60px;
+    z-index: -1;
+    transform: rotate(20deg);
+    transition: 0.5s all ease;
+}
+
+.g4btn3span2{
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    background-color: #968A5C;
+    bottom: -120px;
+    left: -80px;
+    z-index: -1;
+    transform: rotate(20deg);
+    transition: 0.5s all ease;
+}
+
+.g4button:hover .g4btn3span1{
+    top: -25px;
+    left: -5px;
+}
+
+.g4button:hover .g4btn3span2{
+    bottom: -40px;
+    left: -30px;
+} 
+
+.g4btn4span1{
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    background-color: #968A5C;
+    top: -100px;
+    left: -80px;
+    z-index: -1;
+    transform: rotate(-20deg);
+    transition: 0.5s all ease;
+}
+
+.g4btn4span2{
+    position: absolute;
+    width: 160px;
+    height: 70px;
+    background-color: #968A5C;
+    bottom: -120px;
+    left: 60px;
+    z-index: -1;
+    transform: rotate(-20deg);
+    transition: 0.5s all ease;
+}
+
+.g4button:hover .g4btn4span1{
+    top: -30px;
+    left: -30px;
+}
+
+.g4button:hover .g4btn4span2{
+    bottom: -40px;
+    left: -10px;
+}
+
+
