@@ -24,6 +24,7 @@
 }
 
 .btn{
+    font-family: 'Raleway', sans-serif;
     background: none;
     width: 120px;
     height: 50px;
@@ -524,6 +525,48 @@
     background-color: white;
     transform:translate(-10px, -10px);
 }
+
+/* group7 */
+.group7{
+    background-color: #7DE3DC;
+    border: none;
+}
+
+.g7btn{
+    font-weight: 300;
+    color: rgba(0, 78, 100, 0.6);
+    border: none;
+    position: relative;
+    transition: 0.8s all ease;
+    overflow: hidden;
+}
+
+.g7btn::before, .g7btn::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: #004E64;
+    left: -130px;
+    transition: 0.7s all ease;
+}
+
+.g7btn::before{
+    top: 0px;
+}
+
+.g7btn::after{
+    bottom: 0px;
+}
+
+.g7btn:hover::before, .g7btn:hover::after{
+    left: 130px;
+}
+
+.g7btn:hover{
+    color: rgba(0, 78, 100, 1)
+}
+
 
 
 
