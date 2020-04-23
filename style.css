@@ -192,7 +192,7 @@
 
 /* group3 */
 .group3{
-    background-color: #F4DBCA;
+    background-color: #FDE0D0;
     border: none;
 }
 
@@ -209,7 +209,7 @@
     position: absolute;
     width: 16px;
     height: 16px;
-    background-color: #F4DBCA;
+    background-color: #FDE0D0;
     transition: 0.5s all ease;
     border-radius: 50%;
 }
@@ -438,5 +438,92 @@
 .g5btn > div:hover{
     color: white;
 }
+
+/* group6 */
+.group6{
+    background-color: #FEEBF5;
+    border: none;
+}
+
+.g6btn{
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    background: transparent;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    position: relative;
+    transition: 0.3s all ease;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+}
+
+.g6btn::before{
+    width: inherit;
+    height: inherit;
+    display: block;
+    background-color: #FFCED8;
+    position: absolute;
+    z-index: -1;
+    transition: 0.3s all ease;
+}
+
+.g6btn::after{
+    content: "";
+    width: inherit;
+    height: inherit;
+    display: block;
+    background-color: white;
+    position: absolute;
+    z-index: -2;
+    transition: 0.3s all ease;
+}
+
+.g6btn1::after{
+    top: 5px;
+    left: 5px;
+}
+
+.g6btn1::before{
+    content: "Home";
+    top: -5px;
+    left: -5px;
+}
+
+.g6btn2::before{
+    content: "About";
+    top:5px;
+    left: 5px;
+}
+
+.g6btn2::after{
+    top: -5px;
+    left: -5px;
+}
+
+.g6btn1:hover::before{
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transform:translate(10px, 10px);
+}
+
+.g6btn1:hover::after{
+    background-color: #FFCED8;
+    transform:translate(-10px, -10px);
+}
+
+.g6btn2:hover::after{
+    background-color: #FFCED8;
+    transform:translate(10px, 10px);
+}
+
+.g6btn2:hover::before{
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transform:translate(-10px, -10px);
+}
+
 
 
