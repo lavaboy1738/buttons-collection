@@ -567,6 +567,53 @@
     color: rgba(0, 78, 100, 1)
 }
 
+/* group8 */
+.group8{
+    border: none;
+    background-color: #000000;
+}
 
+.g8btn{
+    overflow: hidden;
+    font-weight: 300;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: 0.5s all ease;
+}
 
+.g8btn::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    left: -150px;
+    top: 10px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: none;
+}
+
+.g8btnArrow{
+    position: relative;
+    left: 0;
+    transition: 0.5s all ease;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.g8btn:hover{
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.g8btn:hover .g8btnArrow{
+    left: 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.g8btn:hover::before{
+    left: 120px;
+    transition: 0.5s all ease;
+}
 
