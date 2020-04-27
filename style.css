@@ -5,14 +5,15 @@
 }
 
 .container{
+    max-width: 1240px;
     flex-wrap: wrap;
-    margin: 100px;
+    margin: 100px auto auto auto;
     display: flex;
     justify-content: space-evenly;
 }
 
 .group {
-    margin: 20px;
+    margin: 40px;
     border: 2px solid #4C5B5C;
     width: 300px;
     height: 200px;
