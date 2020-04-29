@@ -656,3 +656,55 @@
     top: -2px;
     opacity: 1;
 }
+
+/* group10 */
+.group10{
+    background-color: #FFE165;
+    border: none;
+}
+
+.g10btn{
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    color: #6A4F47;
+    border: none;
+    font-weight: 300;
+    z-index: 1;
+}
+
+.g10btn::before, .g10btn::after{
+    content: "";
+    width: 120px;
+    background-color: #6A4F47;
+    position: absolute;
+    z-index: -1;
+}
+
+.g10btn::before{
+    transition: 0.3s all ease;
+    bottom: 0;
+    height: 2px;
+    left: -130px;
+}
+
+.g10btn::after{
+    transition: 0.3s all ease;
+    height: 50px;
+    left: 0;
+    bottom: -60px;
+}
+
+.g10btn:hover{
+    transition-delay: 0.5s;
+    color: #FFE165;
+}
+
+.g10btn:hover::before{
+    left: 0;
+}
+
+.g10btn:hover::after{
+    transition-delay: 0.4s;
+    bottom: 0;
+}
