@@ -772,5 +772,55 @@
     top: calc(50% - 10px);
 }
 
+/* group12 */
+.group12{
+    border: 2px solid #7B2D26;
+}
 
+.g12btn{
+    border: 2px solid #7B2D26;
+    color: #7B2D26;
+    width: 160px;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s all ease;
+}
+
+.g12btn::before, .g12btn::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: #7B2D26;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s all ease;
+    z-index: -1;
+}
+
+.g12btn::before{
+    left: 78px;
+}
+
+.g12btn::after{
+    right: 78px;
+}
+
+.g12btn:hover{
+    color: white;
+}
+
+.g12btn:hover::before{
+    width: 78px;
+    left: 0;
+    opacity:1
+}
+
+.g12btn:hover::after{
+    width: 78px;
+    right: 0;
+    opacity:1
+}
 
