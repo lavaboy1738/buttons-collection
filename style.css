@@ -35,6 +35,15 @@
     border: 2px solid  black;
 }
 
+a{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: right;
+    margin: 20px 15px 10px auto
+}
+
 /* group1 */
 
 .g1button{
