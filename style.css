@@ -824,3 +824,53 @@
     opacity:1
 }
 
+/* group13 */
+.group13{
+    border: none;
+    background-color: black;
+}
+
+.g13btn{
+    position: relative;
+    color: white;
+    width: 160px;
+    background: linear-gradient(135deg, #D11149, #E6C229,#F17105, #1A8FE3, #6610F2, #D11149);
+    background-size: 400%;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.g13btn:hover{
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+.g13btn::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(135deg, #D11149,#F17105, #1A8FE3, #6610F2, #D11149);
+    background-size: 400%;
+    border-radius: 30px;
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.g13btn:hover::before{
+    opacity: 1;
+    filter: blur(20px);
+    animation: animate 8s linear infinite;
+}
