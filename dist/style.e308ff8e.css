@@ -797,22 +797,6 @@ a{
     transition: 0.5s all ease;
 }
 
-/* .g12btn::before{
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 2px;
-    left: 50%;
-    top: 0;
-    background-color: red;
-    transition: 0.5s all linear;
-}
-
-.g12btn:hover::before{
-    width: 100%;
-    transform: translateX(-50%);
-} */
-
 .g12btn::before, .g12btn::after{
     position: absolute;
     content: "";
@@ -820,18 +804,17 @@ a{
     height: 100%;
     background-color: #7B2D26;
     top: 0;
-    opacity: 1;
-    transform: translate(0);
-    transition: 0.3s all ease;
+    opacity: 0;
+    transition: 0.5s all ease;
     z-index: -1;
 }
 
 .g12btn::before{
-    left: 79px;
+    left: 78px;
 }
 
 .g12btn::after{
-    right: 79px;
+    right: 78px;
 }
 
 .g12btn:hover{
@@ -839,13 +822,15 @@ a{
 }
 
 .g12btn:hover::before{
-    width: 79px;
-    transform: translateX(-100%);
+    width: 78px;
+    left: 0;
+    opacity:1
 }
 
 .g12btn:hover::after{
-    width: 79px;
-    transform: translateX(100%);
+    width: 78px;
+    right: 0;
+    opacity:1
 }
 
 /* group13 */
@@ -1039,3 +1024,5 @@ a{
     border: #b5838d;
     transform: rotateX(90deg) translateZ(25px);
 }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
